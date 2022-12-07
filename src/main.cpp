@@ -26,7 +26,7 @@ int main(){
   unsigned int number;
   std::cout << "Введите количество мобил: ";
   std::cin >> number;
-  MobilePhone phones[number];
+  MobilePhone *phones = new MobilePhone[number];
 
   for (int i=0; i<number; i++){
     std::cout << "Введите данные мобилы №" << i+1 << std::endl;
