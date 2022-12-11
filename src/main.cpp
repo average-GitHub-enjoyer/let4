@@ -39,10 +39,6 @@ int main(){
   }
 
    printXML(phones, number);
-
-  // for (int i=0; i<number; i++){
-  //   printPhoneStruct(&phones[i]);
-  // }
-
+   delete [] phones;
   return 0;
 }
